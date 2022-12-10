@@ -34,6 +34,13 @@ def virus_compare(content="",virus="" ):
       virus = read(virus,"r")
       for code_line in enumerate(file):
         for virus_line in enumerate(virus):
+          if re.match(virus_line,code_line) == True:
+            suspicion =+ 100/len(content.readlines())
+         
+file_scan()
+print(files_)
+print(folders_)
+        for virus_line in enumerate(virus):
           re.match(virus_line,code_line)
          
 file_scan()
