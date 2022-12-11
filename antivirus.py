@@ -5,7 +5,6 @@ file_scanned = ""
 global suspicion
 suspicion = 0
 viruses = []
-unscanned_files = []
 files = []
 for cwd, folders_, files_ in os.walk("virus_sample_folder"):
     for name in files_:
